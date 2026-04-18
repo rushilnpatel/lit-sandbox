@@ -1,0 +1,29 @@
+:host {
+  display: block;
+  border: 2px solid #4a90e2;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 12px;
+}
+
+h3 {
+  margin: 0 0 8px;
+  color: #4a90e2;
+}
+
+p {
+  margin: 0 0 12px;
+}
+
+button {
+  padding: 8px 16px;
+  background: #4a90e2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+
+  &:hover {
+    background: #357abd;
+  }
+}

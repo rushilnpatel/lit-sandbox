@@ -1,0 +1,21 @@
+{
+  "name": "lit-sandbox",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@lit/context": "^1.1.6",
+    "@rolldown/binding-darwin-arm64": "^1.0.0-rc.15",
+    "lit": "^3.3.2"
+  },
+  "devDependencies": {
+    "sass": "^1.99.0",
+    "typescript": "~6.0.2",
+    "vite": "^8.0.4"
+  }
+}
