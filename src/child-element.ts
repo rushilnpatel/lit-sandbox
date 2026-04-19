@@ -3,6 +3,7 @@ import { LitElement, html, unsafeCSS } from 'lit';
 import { customElement, state } from 'lit/decorators.js';
 import styles from './child-element.scss?inline';
 import { consoleLoggerContext, loggerContext } from './logger.context';
+import { flatten } from './flatten/flatten';
 
 @customElement('child-element')
 export class ChildElement extends LitElement {
@@ -20,6 +21,10 @@ export class ChildElement extends LitElement {
 
   onbuttonClick = () => {
     this.consoleData.setValue(`beacon: ${this.messageFromParent}`)
+  }
+
+  firstUpdated() {
+    console.log("++", flatten([1, [3,4]]));
   }
 
 
