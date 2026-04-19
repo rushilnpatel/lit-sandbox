@@ -25,6 +25,7 @@ export class ChildElement extends LitElement {
 
   firstUpdated() {
     console.log("++", flatten([1, [3,4]]));
+    console.log("++", flatten([]));
   }
 
 

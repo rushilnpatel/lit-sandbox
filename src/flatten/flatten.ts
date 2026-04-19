@@ -1,7 +1,7 @@
-export const flatten = (passedValue: number[]): number[] => {
+export const flatten = (passedValue: any[]): any[] => {
     if (!Array.isArray(passedValue)) return [];
 
-    return passedValue.reduce((prev: number[], curr: number) => {
+    return passedValue.reduce((prev: any[], curr: any) => {
         if (Array.isArray(curr)) {
             return [...prev, ...flatten(curr)];
         } else {
